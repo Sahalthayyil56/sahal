@@ -1,0 +1,448 @@
+body {
+            background-color: #0f172a;
+            color: #ffffff;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: #000;
+            
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #fff !important;
+        }
+
+        .nav-link:hover {
+            color: #22c55e !important;
+        }
+
+        .navbar-toggler {
+            border-color: #fff;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        @media (min-width: 992px) {
+            .navbar-center {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        .fname {
+            color: #ffffff;
+            font-size: 2rem;
+        }
+
+        .name {
+            color: #22c55e;
+            font-size: 2rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 60px 15px;
+
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+        }
+
+        .hero h1 .highlight {
+            color: #22c55e;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: #cbd5e1;
+            max-width: 600px;
+        }
+
+        .hero .btn-download {
+            background-color: transparent;
+            border: 2px solid #22c55e;
+            color: #ffffff;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .hero .btn-download:hover {
+            background-color: #22c55e;
+            color: #000;
+        }
+
+        .profile-img {
+            width: 100%;
+            max-height: 550px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero .btn-download {
+                margin-top: 20px;
+            }
+        }
+
+        .section-title {
+            text-transform: uppercase;
+            font-size: 2.5rem;
+            color: white;
+        }
+
+        .section-title span {
+            color: #22c55e;
+            /* green color for "ME" */
+        }
+
+        .subheading {
+            font-weight: bold;
+            font-size: 2rem;
+            color: white;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .aboutcontent {
+            font-size: 1.5rem;
+            color: #cbd5e1;
+
+
+        }
+
+        @media (max-width: 576px) {
+            .section-title {
+                font-size: 2rem;
+                text-align: center;
+            }
+
+            .subheading,
+            .content {
+                text-align: center;
+            }
+        }
+
+        .skills-section {
+            text-align: center;
+        }
+
+        .skills-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+
+        .skill-btn {
+            border: 1px solid #94a3b8;
+            color: #fff;
+            border-radius: 10px;
+            padding: 15px 30px;
+            margin: 10px 0;
+            width: 80%;
+            background-color: transparent;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .skill-btn:hover {
+            border-color: #22c55e;
+            color: #22c55e ;
+            width: 100%;
+        }
+
+        .custom-line {
+            border: none;
+            height: 1px;
+            background-color: #ccc;
+            /* or a darker color like #3a3a48 */
+            width: 80%;
+            /* adjust this to your preference */
+            opacity: 0.2;
+        }
+
+
+
+
+        @media (min-width: 768px) {
+            .skill-col {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+
+        .timeline {
+            position: relative;
+            left: 20px;
+            right: 100px;
+            margin: 0 auto;
+            z-index: -1;
+        }
+
+
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 60px;
+            padding-left: 60px;
+        }
+
+        .timeline-icon {
+            position: absolute;
+            top: 0;
+            left: -3px;
+            width: 55px;
+            height: 55px;
+            background-color: #23c076;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            z-index: 2;
+        }
+
+        .badge-dark {
+            background-color: #3a3a48;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 12px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        .timeline-content {
+            margin-top: 5px;
+        }
+
+        .timeline-content h5 {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .timeline-content span {
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+
+        .timeline-content p {
+            margin: 5px 0 0;
+            color: #dcdcdc;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 576px) {
+            .timeline {
+                padding-left: 20px;
+            }
+
+            .timeline-item {
+                padding-left: 50px;
+            }
+
+            .timeline-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 16px;
+            }
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 7px;
+            bottom: 0;
+            left: 20px;
+            width: 2px;
+            background-color: #3a3a48;
+            height: 75%;
+        }
+
+        .timeline1 {
+            position: relative;
+            left: 20px;
+            right: 100px;
+            margin: 0 auto;
+            z-index: -1;
+        }
+
+        .timeline1::before {
+            content: '';
+            position: absolute;
+            top: 7px;
+            bottom: 0;
+            left: 20px;
+            width: 2px;
+
+        }
+
+        /* ----------------------------------------- */
+
+
+        .projects {
+            padding: 4rem 2rem;
+            color: white;
+            text-align: center;
+        }
+
+        .projects h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+
+        .projects h2 span {
+            color: #2ecc71;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .project-card {
+            background-color: #1e1f2b;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            transform: scale(1);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-card h3 {
+            font-size: 1.125rem;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .green-bar {
+            height: 4px;
+            background-color: #2ecc71;
+        }
+
+        /* ------------------------------------------------------ */
+
+        #contact h1 {
+            text-align: center;
+            font-size: 3em;
+        }
+
+        #contact h1 span {
+            color: #2ecc71;
+        }
+        .containercontact {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            padding: 40px 0;
+        }
+
+        .info,
+        .form {
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+        }
+
+        .info p {
+            margin: 10px 0;
+            color: #ccc;
+        }
+
+        .info i {
+            color: #2ecc71;
+            margin-right: 10px;
+        }
+
+        .form input,
+        .form textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 10px;
+            background-color: #1c1f26;
+            color: white;
+        }
+
+        .form button {
+            background-color: white;
+            color: black;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .download-cv {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: transparent;
+            border-radius: 25px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: 1px solid #2ecc71;
+        }
+
+        .download-cv:hover {
+            background-color: #2ecc71;
+            transition: all 0.3s ease;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            margin-right: 15px;
+            color: white;
+            font-size: 1.5em;
+        }
